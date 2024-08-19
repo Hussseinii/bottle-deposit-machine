@@ -2,17 +2,6 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,16 +12,71 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.main-container {
+  flex: 1;
+  border: 1px solid white;
+  width: 70%;
+  height: 600px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #3a3f47;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main-title {
+  text-align: center;
+}
+
+.controls-container {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.control-section {
+  flex: 1;
+  border: 1px solid white;
+  margin: 0 10px;
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #4a4f57;
+}
+
+.control-section button {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #d17621;
+  border: none;
+  color: black;
+  font-weight: bold;
+}
+
+.control-section input {
+  width: 50px;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid white;
+  background-color: #3a3f47;
+  color: white;
+}
+
+.voucher-section {
+  margin-top: 20px;
+}
+
+.voucher-section h2 {
+  margin: 10;
+}
+
+.voucher-button {
+  margin-top: 40px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color:  #d17621;
+  border: none;
+  color: black;
+  font-weight: bold;
 }
